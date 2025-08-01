@@ -1,6 +1,7 @@
 import articlePin from "../assets/pin.png";
 
 const Entry = (props) => {
+  // console.log(props);
   return (
     <article className="article-entry">
       <div className="article-image-container">
@@ -17,8 +18,8 @@ const Entry = (props) => {
         <a href={props.urlGoogle} target="_blank">
           Visit the Country
         </a>
-        <h2>{props.city}</h2>
-        <p>{props.date}</p>
+        <h2 style={{ marginBottom: 0 }}>{props.city}</h2>
+        <small>{props.date}</small>
         <p>{props.description}</p>
       </div>
     </article>
